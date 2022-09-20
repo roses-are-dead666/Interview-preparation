@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 40px;
+    background: #1b2430;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.headerInner {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    font-size: 25px;
+}
+
+.tabLink {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabLink:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.tabLink:hover:after {
+    width: 100%; 
+    left: 0;
+}
+
+.tabContent {
+    width: 100%;
+    height: 100vh;
+}
+
+.contentInner {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contentTitle {
+    font-size: 35px;
+    letter-spacing: 1.5px;
+}
+
+.intQuestion {
+    font-size: 23px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.intAnswer {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.intAnswer p {
+    color: rgb(104, 104, 104);
+    text-indent: 30px;
+    margin : 0; 
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+.sides {
+   margin-bottom: 10px;
+   margin-top: 10px;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    background: #1b2430;
+    margin-top: 40px;
+}
+
+.footerInner {
+    display: flex;
+    justify-content: center;
+}
+
+.footerBot {
+    font-size: 23px;
+    color: #FFF;
+}
+
+.footerBot span {
+    text-transform: none;
+}
+
+.roses {
+    display: inline;
+    color: #ff6680;
+    text-decoration: none;
+    font-size: 25px;
+    transition: .1s linear;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    position: relative;   
+    cursor: pointer;
+}
+
+.roses:hover {
+    color: #ff6680;
+}
+
+.roses:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ff6680;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.roses:hover:after { 
+    width: 100%; 
+    left: 0;
+}
