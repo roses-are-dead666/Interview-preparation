@@ -8,7 +8,7 @@
     <title>Interview Preparation</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="headerInner">
                 <nav>
@@ -17,6 +17,10 @@
                     <a class="tabLink" onclick="openPage('css')">CSS</a>
                     <a class="tabLink" onclick="openPage('js')">JavaScript</a>
                 </nav>
+
+                <button class="navBurger" type="button">
+                    <span class="navBurgerItem"></span>
+                </button>
             </div>
         </div>
     </header>
@@ -69,7 +73,7 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="footerInner">
+            <div class="footerInner"> 
                 <p class="footerBot">Разработал: <a class="roses" href="https://github.com/roses-are-dead666" target="_blank"><span>@roses-are-dead666</span></a>
             </div>
         </footer>
@@ -93,6 +97,6 @@
 
 
     <script src="js.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </body>
 </html>

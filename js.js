@@ -31,3 +31,9 @@ function openPage(pageName) {
                 mobileNav.style.display = "block";
             }
         }
+
+$(function() {
+    $(window).on("scroll", function() {
+        
+    })
+})

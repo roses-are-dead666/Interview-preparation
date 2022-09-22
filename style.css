@@ -18,16 +18,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     width: 100%;
     padding: 40px;
-    margin-bottom: 40px;
     background: #1b2430;
+}
+
+.header.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header.active {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1160px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 .headerInner {
@@ -38,6 +56,71 @@ h1, h2, h3, h4, h5, h6 {
 nav {
     font-size: 25px;
 }
+
+/* BURGER MENU START */
+
+.navBurger {
+    display: none;
+    position: absolute;
+    width: 30px;
+    padding: 20px 0;
+    top: 10px;
+    right: 30px;
+    z-index: 1;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.navBurger.active .navBurgerItem {
+    background: none;
+}
+
+.navBurger.active .navBurgerItem:before {
+    transform-origin: left top;
+    transform: rotate(45deg) translate3d(0px, -2px, 0px);
+}
+
+.navBurger.active .navBurgerItem:after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translate3d(0px, 3px, 0px);
+}
+
+.navBurgerItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: background-color .2s linear;
+}
+
+.navBurgerItem:before,
+.navBurgerItem:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    z-index: 1;
+    transition: transform .2s linear;
+}
+
+.navBurgerItem:before {
+    top: -8px;
+}
+
+.navBurgerItem:after {
+    bottom: -8px;
+}
+
+/* BURGER MENU END */
 
 .tabLink {
     display: inline-block;
@@ -70,6 +153,7 @@ nav {
 .tabContent {
     width: 100%;
     height: 100vh;
+    margin-top: 150px;
 }
 
 .contentInner {
@@ -135,7 +219,7 @@ nav {
     display: inline;
     color: #ff6680;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 23px;
     transition: .1s linear;
     text-transform: uppercase;
     padding-bottom: 5px;
@@ -163,4 +247,116 @@ nav {
 .roses:hover:after { 
     width: 100%; 
     left: 0;
+}
+
+@media (max-width: 990px) {
+
+    .contentTitle {
+        font-size: 32px;
+    }
+
+    .intQuestion {
+        font-size: 20px;
+    }
+
+    .intAnswer {
+        font-size: 20px;
+    }
+
+    nav {
+        font-size: 23px;
+    }
+
+    .footerBot {
+        font-size: 20px;
+    }
+    
+    .roses {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .contentTitle {
+        font-size: 28px;
+    }
+
+    .intQuestion {
+        font-size: 20px;
+    }
+
+    .intAnswer {
+        font-size: 18px;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    .footerBot {
+        font-size: 18px;
+    }
+    
+    .roses {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .header {
+        padding: 30px 0;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        font-size: 20px;
+        background: #1b2430;
+    }
+
+    .tabLink {
+        display: block;
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    .navBurger {
+        display: block;
+    }
+
+    .tabContent {
+        margin-top: 100px;
+    }
+
+    .contentTitle {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .intQuestion {
+        font-size: 20px;
+        letter-spacing: 1;
+    }
+
+    .intAnswer {
+        font-size: 18px;
+    }
+
+    .intAnswer p {
+        letter-spacing: 1px;
+    }
+
+    .footerBot {
+        font-size: 18px;
+    }
+    
+    .roses {
+        font-size: 18px;
+    }
+    
 }
