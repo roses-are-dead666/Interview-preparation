@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header.fixed {
+    padding: 20px;
     position: fixed;
     top: 0;
     right: 0;
@@ -309,6 +310,10 @@ nav {
         padding: 30px 0;
     }
 
+    .header.fixed {
+        padding: 30px;
+    }
+
     nav {
         display: none;
         position: absolute;
@@ -317,6 +322,12 @@ nav {
         left: 0;
         font-size: 20px;
         background: #1b2430;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav.active {
+        display: block;
     }
 
     .tabLink {
