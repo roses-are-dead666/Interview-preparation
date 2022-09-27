@@ -12,10 +12,10 @@
         <div class="container">
             <div class="headerInner">
                 <nav>
-                    <a class="tabLink" onclick="openPage('hr')" id="defaultOpen">HR</a>
+                    <a class="tabLink" onclick="openPage('hr')">HR</a>
                     <a class="tabLink" onclick="openPage('html')">HTML</a>
                     <a class="tabLink" onclick="openPage('css')">CSS</a>
-                    <a class="tabLink" onclick="openPage('js')">JavaScript</a>
+                    <a class="tabLink" onclick="openPage('js')" id="defaultOpen">JavaScript</a>
                 </nav>
 
                 <button class="navBurger" id="navBurger" type="button">
@@ -41,14 +41,10 @@
                     <p>Из моих увлечений можно перечислить спорт, а именно баскетбол, чтение, моим любимым писателем является Говард Филлипс Лавкрафт. 
                     Наверное, этого достаточно для рассказа. Если у вас есть вопросы, я на каждый из них готов ответить.</p>
                 </div>
-            </div>
-            <div class="contentInner">
                 <h2 class="intQuestion">Кем вы видите себя через Х лет?</h2>
                 <div class="intAnswer"> 
                     <p>Я вижу себя всесторонне развитым и опытным специалистом, который привнесет ценность и пользу компании и будет развиваться вместе с ней.</p>
                 </div>
-            </div>
-            <div class="contentInner">
                 <h2 class="intQuestion">Назовите свои сильные и слабые стороны</h2>
                 <div class="intAnswer"> 
                     <div class="sides"><strong>Сильные стороны:</strong></div>
@@ -63,8 +59,6 @@
                         <p>Обращаю внимание к мелочам, когда это излишне, и критикую себя в случае неудачи. Постепенно начал учить себя тому, что неудачи тоже опыт, без них нет роста.</p>
                         <p>Мы всего лишь люди и никто не идеален, тем не менее, я стараюсь быть лучшей версией себя.</p>
                 </div>
-            </div>
-            <div class="contentInner">
                 <h2 class="intQuestion">Почему мы должны взять вас на эту должность?</h2>
                 <div class="intAnswer"> 
                     <p>Ваша вакансия меня очень заинтересовала, потому что, это позволит мне учиться новому и совершенствовать свои знания, и в будущем стать профессионалом своего дела. 
@@ -91,8 +85,84 @@
     </div>
     <div class="tabContent" id="js">
         <div class="container">
-            <h1 class="contentTitle">Interview JavaScript questions</h1>
+            <h1 class="contentTitle">Интервью: JavaScript</h1>
+            <div class="contentInner">
+                <h2 class="intQuestion">В чем разница между null и undefined?</h2>
+                <div class="intAnswer"> 
+                    <p>undefined неожиданное отсутствие значения</p>
+                    <p>null — умышленное отсутствие значения</p>
+                    <p>Чтобы понять разницу можно использовать строгое сравнени "==="</p>
+                    <p>null == undefined [true]</p>
+                    <p>null === undefined [false]</p>
+                </div>
+                <h2 class="intQuestion"> Что такое DOM?</h2>
+                <div class="intAnswer"> 
+                    <p>DOM или Document Object Model (объектная модель документа) — это прикладной программный интерфейс (API) для работы с HTML и XML документами</p>
+                </div>
+                <h2 class="intQuestion">Что такое всплытие события?</h2>
+                <div class="intAnswer"> 
+                    <p>Событие «всплывает», переходит от элемента, вызвавшего событие (event.target), к его родителю, затем поднимается еще выше, к родителю родителя элемента, пока не достигает объекта Window.</p>
+                </div>
+                <h2 class="intQuestion">Что такое погружение события?</h2>
+                <div class="intAnswer"> 
+                    <p>В фазе погружения событие опускается от объекта Window до цели события через всех его предков.</p>
+                </div>
+                <h2 class="intQuestion">В чем разница между методами event.preventDefault() и event.stopPropagation()?</h2>
+                <div class="intAnswer"> 
+                    <p>Метод event.preventDefault() отключает поведение элемента по умолчанию</p>
+                    <p>Метод event.stopPropagation() отключает распространение события (его всплытие или погружение).</p>
+                </div>
+                <h2 class="intQuestion">В чем разница между операторами "==" и "==="?</h2>
+                <div class="intAnswer"> 
+                    <p>Разница между оператором "==" (нестрогое равенство) и оператором "===" (строгое равенство) состоит в том, что первый сравнивает значения после их преобразования или приведения к одному типу, а второй — без такого преобразования.</p>
+                </div>
+                <h2 class="intQuestion">Что такое поднятие (Hoisting)?</h2>
+                <div class="intAnswer"> 
+                    <p>Поднятие — это термин, описывающий подъем переменной или функции в глобальную или функциональную области видимости.</p>
+                </div>
+                <h2 class="intQuestion">Что такое область видимости (Scope)?</h2>
+                <div class="intAnswer"> 
+                    <p>Область видимости — это место, где (или откуда) мы имеем доступ к переменным или функциям. JS имеем три типа областей видимости: глобальная, функциональная и блочная (ES6).</p>
+                </div>
+                <h2 class="intQuestion">Что такое замыкание (Closures)?</h2>
+                <div class="intAnswer"> 
+                    <p>Замыкание — это способность функции во время создания запоминать ссылки на переменные и параметры, находящиеся в текущей области видимости, в области видимости родительской функции, в области видимости родителя родительской функции и так до глобальной области видимости с помощью цепочки областей видимости.</p>
+                </div>
+                <h2 class="intQuestion">Какое значение имеет this?</h2>
+                <div class="intAnswer"> 
+                    <p>Обычно this ссылается на значение объекта, который в данный момент выполняет или вызывает функцию.</p>
+                </div>
+                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
+                <div class="intAnswer"> 
+                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
+                </div>
+                <h2 class="intQuestion">Что такое IIFE?</h2>
+                <div class="intAnswer"> 
+                    <p>IIFE или Immediately Invoked Function Expression — это функция, которая вызывается или выполняется сразу же после создания или объявления.</p>
+                </div>
+                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
+                <div class="intAnswer"> 
+                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
+                </div>
+                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
+                <div class="intAnswer"> 
+                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
+                </div>
+                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
+                <div class="intAnswer"> 
+                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
+                </div>
+                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
+                <div class="intAnswer"> 
+                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
+                </div>
+            </div>
         </div>
+        <footer class="footer">
+            <div class="footerInner"> 
+                <p class="footerBot">Разработал: <a class="roses" href="https://github.com/roses-are-dead666" target="_blank"><span>@roses-are-dead666</span></a>
+            </div>
+        </footer>
     </div>
 
 
