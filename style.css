@@ -191,6 +191,11 @@ nav {
     letter-spacing: 2px;
 }
 
+.intAnswer li {
+    color: rgb(104, 104, 104);
+    letter-spacing: 2px;
+}
+
 .sides {
    margin-bottom: 10px;
    margin-top: 10px;

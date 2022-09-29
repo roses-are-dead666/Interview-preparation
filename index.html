@@ -12,10 +12,9 @@
         <div class="container">
             <div class="headerInner">
                 <nav>
-                    <a class="tabLink" onclick="openPage('hr')">HR</a>
-                    <a class="tabLink" onclick="openPage('html')">HTML</a>
-                    <a class="tabLink" onclick="openPage('css')">CSS</a>
-                    <a class="tabLink" onclick="openPage('js')" id="defaultOpen">JavaScript</a>
+                    <a class="tabLink" onclick="openPage('hr')" >HR</a>
+                    <a class="tabLink" onclick="openPage('html')" id="defaultOpen">HTML / CSS</a>
+                    <a class="tabLink" onclick="openPage('js')" >JavaScript</a>
                 </nav>
 
                 <button class="navBurger" id="navBurger" type="button">
@@ -75,13 +74,159 @@
 
     <div class="tabContent" id="html">
         <div class="container">
-            <h1 class="contentTitle">Interview HTML questions</h1>
+            <h1 class="contentTitle">Интервью: HTML и CSS</h1>
+            <div class="contentInner">
+                <h2 class="intQuestion">Что такое doctype?</h2>
+                <div class="intAnswer">
+                    <p><strong>Doctype</strong> - существует для указания типа документа. Добавляется первой стракой для любого HTML документа.</p>
+                </div>
+                <h2 class="intQuestion">Базовая структура HTML-документа</h2>
+                <div class="intAnswer">
+                    <p>Doctype -> HTML - это корневая обертка страницы.</p>
+                    <p>-> head - содержит все необходимые данные HTML документа.</p>
+                    <p>-> body - содержит всю разметку HTML документа которая будет отображатся в браузере.</p>
+                </div>
+                <h2 class="intQuestion">Базовая структура HTML-документа</h2>
+                <div class="intAnswer">
+                    <p>Doctype -> HTML - это корневая обертка страницы.</p>
+                    <p>-> head - содержит все необходимые данные HTML документа.</p>
+                    <p>-> body - содержит всю разметку HTML документа которая будет отображатся в браузере.</p>
+                </div>
+                <h2 class="intQuestion">Что такое CSS</h2>
+                <div class="intAnswer">
+                    <p><strong>CSS</strong> - каскадная таблица стилей. Предназначены для добавления стилей для HTML документа.</p>
+                </div>
+                <h2 class="intQuestion">Свойство display - основные значения и как они работают?</h2>
+                <div class="intAnswer">
+                    <p>Основные свойство: </p>
+                    <ul>
+                        <li>None</li>
+                        <li>Block</li>
+                        <li>Inline</li>
+                        <li>Inline-block</li>
+                        <li>Flex</li>
+                    </ul>
+                    <p><strong>Inline</strong> - элементы расположены в одну строку и размер зависит от содержимого.</p>
+                    <p><strong>Block</strong> - размер определяется размерами заданных в стилях, но сам блок занимает всю свободную ширину экрана и все последующие блоки переносятся на следующую строку.</p>
+                    <p><strong>Inline-block</strong> - элементы расположены в одну строку, но можно задавать свой размер.</p>
+                    <p><strong>Flex</strong> - основная концепция в том, что мы можем задавать гибкие лейоуты, управлять направлением, одним свойством центрировать блоки по вертикали и по горизонтали, изменять порядок элементов в целом делать гибкие и отзывчивые макеты.</p>
+                    <p><strong>None</strong> - элемент ничего не показывает.</p>
+                </div>
+                <h2 class="intQuestion">Keyframes для чего нужно и как использовать?</h2>
+                <div class="intAnswer">
+                    <p><strong>Keyframes</strong> - определяет ключевые кадры для анимации. Указывается начальная точка (from) и конечная (to). Ключевое свойство animation.</p>
+                </div>
+                <h2 class="intQuestion">Свойства position</h2>
+                <div class="intAnswer">
+                    <p>Основные свойство: </p>
+                    <ul>
+                        <li>Static</li>
+                        <li>Relative</li>
+                        <li>Absolute</li>
+                        <li>Fixed</li>
+                        <li>Sticky</li>
+                    </ul>
+                    <p><strong>Static</strong> - значение по умолчанию.</p>
+                    <p><strong>Relative</strong> - сдвигает элемент относительно его обычного положения.</p>
+                    <p><strong>Absolute</strong> - пробадает из общего потока и для остальных элементов как будто он не существует.</p>
+                    <p><strong>Fixed</strong> - пробадает из общего потока и закреплен на экране.</p>
+                    <p><strong>Sticky</strong> - закреплен на экране, но в рамках заданного блока.</p>
+                </div>
+                <h2 class="intQuestion">Что делает box-sizing: border-box?</h2>
+                <div class="intAnswer">
+                    <p>При помощи box-sizing: border-box мы можем сказать браузеру, что ширина, которую мы ставим, относится к элементу полностью, включая border и padding.</p>
+                </div>
+                <h2 class="intQuestion">Как обрабатывает WEB страницу браузер?</h2>
+                <div class="intAnswer">
+                    <ol>
+                        <li>Формируется DOM дерево из HTML</li>
+                        <li>Загружаются стили</li>
+                        <li>На основании DOM и CSS формируется дерево рендеринга</li>
+                        <li>Для каждого элемента рассчитывается положение на странице</li>
+                        <li>Отрисовка в браузере</li>
+                    </ol>
+                </div>
+                <h2 class="intQuestion">Что такое inline стили?</h2>
+                <div class="intAnswer">
+                    <p><strong>Inline стили</strong> - это стили которые пишутся напрямую в HTML. Имееют самый высокий приоритет.</p>
+                </div>
+                <h2 class="intQuestion">Чем border отличается от outline?</h2>
+                <div class="intAnswer">
+                    <p><strong>border</strong> - является частью элемента.</p>
+                    <p><strong>outline</strong> - не является частью элемента. Просто визуальное состовляющее которое не влияет на блочную модель элемента.</p>
+                </div>
+                <h2 class="intQuestion">Что такое БЭМ?</h2>
+                <div class="intAnswer">
+                    <p><strong>Блок Элемент Модификатор</strong> - разделяет интерфейс на независимые блоки. Позволяет быстро разрабатывать интерфейсы и повторно использовать существующий код.</p>
+                </div>
+                <h2 class="intQuestion">В чем различие между строчными и блочными элементами?</h2>
+                <div class="intAnswer">
+                    <p><strong>Строчные</strong> - располагаются в одну строку.</p>
+                    <p><strong>Блочные</strong> - занимают всю свободную ширину.</p>
+                </div>
+                <h2 class="intQuestion">В чем разница между padding и margin?</h2>
+                <div class="intAnswer">
+                    <p><strong>padding</strong> - внешние отспупы.</p>
+                    <p><strong>margin</strong> - внутренние отступы.</p>
+                </div>
+                <h2 class="intQuestion">Что такое семантические элементы?</h2>
+                <div class="intAnswer">
+                    <p>Они определяют конкретные части страницы. Позволяет браузеру ясно определить роль содержимого контента (header, nav, section, footer etc).</p> 
+                </div>
+                <h2 class="intQuestion">Свойство overflow</h2>
+                <div class="intAnswer">
+                    <p>Используется чтобы убрать прокрутку на странице когда элемент выходит за границы страницы.</p> 
+                </div>
+                <h2 class="intQuestion">За что отвечают justify-content и align-items?</h2>
+                <div class="intAnswer">
+                    <p><strong>justify-content</strong> - влияет на расположение элементов по главной оси контейнера. По умолчанию по оси х.</p> 
+                    <p><strong>align-items</strong> - влияет на расположение элементов по второстепенной оси, по оси y.</p> 
+                </div>
+                <h2 class="intQuestion">Приоритеты селекторов</h2>
+                <div class="intAnswer">
+                    <p>Каждый селектор имеет свой вес и наибольший вес имееют inline-стили > id > class > тег.</p> 
+                </div>
+                <h2 class="intQuestion">Что такое псевдоклассы?</h2>
+                <div class="intAnswer">
+                    <p>Псевдоклассы используются для определения характеристики элементов. Они не отображаются в исходном документе и не пренадлежат дереву документа DOM (hover, focus etc).</p> 
+                </div>
+                <h2 class="intQuestion">background-size</h2>
+                <div class="intAnswer">
+                    <p><strong>cover</strong> - сохраняет свои пропорции, но изменяется размер чтобы уместиться в блок.</p> 
+                    <p><strong>contain</strong> - ужимает картинку пока не вместиться в блок.</p>
+                </div>
+                <h2 class="intQuestion">Какие псевдоэлементы знаете?</h2>
+                <div class="intAnswer">
+                    <p><strong>Псевдоселекторы</strong> - позволяют стилизовать определенный элемент (before, after, first-letter etc).</p> 
+                </div>
+                <h2 class="intQuestion">!important для чего нужен?</h2>
+                <div class="intAnswer">
+                    <p>Чтобы повысить приоритет селектора и переопределить стили.</p> 
+                </div>
+                <h2 class="intQuestion">Разница между script, script async и script defer</h2>
+                <div class="intAnswer">
+                    <p><strong>script</strong> - По стандарту браузер загружает первым, прогрузка происходит сверху вниз, синхронно.</p>
+                    <p><strong>async/defer</strong> - браузер прогружается в асинхронным режиме, defer используют когда важен порядок загрузки скриптов и срабатывает только когда заргузился весь HTML.</p> 
+                </div>
+                <h2 class="intQuestion">Для чего рекомендуется использовать атрибуты data?</h2>
+                <div class="intAnswer">
+                    <p>Они предназначены для хранения каких либо значении. Например: для создание всплывающих подсказок без приминения js (data-название).</p> 
+                </div>
+                <h2 class="intQuestion">Что такое селектор атрибутов?</h2>
+                <div class="intAnswer">
+                    <p>Устанавливает стиль для элементов, у которых присутствует указанный атрибут. В качестве селектора используются квадратные скобки (input[type: password]), внутри которых пишется произвольный атрибут.</p> 
+                </div>
+                <h2 class="intQuestion">Для чего используются препроцессоры?</h2>
+                <div class="intAnswer">
+                    <p>Препроцессоры - расширяет стандартные возможности CSS. Например: миксины. Миксины - это определенные свойства которые позже можно будет переипользовать.</p> 
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="tabContent" id="css">
-        <div class="container">
-            <h1 class="contentTitle">Interview CSS questions</h1>
-        </div>
+        <footer class="footer">
+            <div class="footerInner"> 
+                <p class="footerBot">Разработал: <a class="roses" href="https://github.com/roses-are-dead666" target="_blank"><span>@roses-are-dead666</span></a>
+            </div>
+        </footer>
     </div>
     <div class="tabContent" id="js">
         <div class="container">
