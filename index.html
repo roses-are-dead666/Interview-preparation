@@ -13,8 +13,10 @@
             <div class="headerInner">
                 <nav>
                     <a class="tabLink" onclick="openPage('hr')" >HR</a>
-                    <a class="tabLink" onclick="openPage('html')" id="defaultOpen">HTML / CSS</a>
-                    <a class="tabLink" onclick="openPage('js')" >JavaScript</a>
+                    <a class="tabLink" onclick="openPage('html')">HTML</a>
+                    <a class="tabLink" onclick="openPage('css')">CSS</a>
+                    <a class="tabLink" onclick="openPage('js')">JavaScript</a>
+                    <a class="tabLink" onclick="openPage('problems')" id="defaultOpen">Задачи</a>
                 </nav>
 
                 <button class="navBurger" id="navBurger" type="button">
@@ -74,7 +76,7 @@
 
     <div class="tabContent" id="html">
         <div class="container">
-            <h1 class="contentTitle">Интервью: HTML и CSS</h1>
+            <h1 class="contentTitle">Интервью: HTML</h1>
             <div class="contentInner">
                 <h2 class="intQuestion">Что такое doctype?</h2>
                 <div class="intAnswer">
@@ -92,7 +94,28 @@
                     <p>-> head - содержит все необходимые данные HTML документа.</p>
                     <p>-> body - содержит всю разметку HTML документа которая будет отображатся в браузере.</p>
                 </div>
-                <h2 class="intQuestion">Что такое CSS</h2>
+                <h2 class="intQuestion">Что такое валидация?</h2>
+                <div class="intAnswer">
+                    <p><strong>Валидация</strong> - это проверка на установленные веб стандарты и обноружение существующих ошибок. Эти стандарты называются спецификациями.</p>
+                    <p>Основные типы проверок: проверка синтаксиса, проверка вложенности тегов, проверка на наличие посторонних элементов.</p>
+                </div>
+                <h2 class="intQuestion">Для какого тэга используется атрибут alt?</h2>
+                <div class="intAnswer">
+                    <p>Атрибут alt добавляется тэга картинки (img). Он нужен для того, чтобы в случае когда картинка не отображается на странице отображалось название картинки.</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footerInner"> 
+                <p class="footerBot">Разработал: <a class="roses" href="https://github.com/roses-are-dead666" target="_blank"><span>@roses-are-dead666</span></a>
+            </div>
+        </footer>
+    </div>
+    <div class="tabContent" id="css">
+        <div class="container">
+            <h1 class="contentTitle">Интервью: CSS</h1>
+            <div class="contentInner">
+                <h2 class="intQuestion">Что такое CSS?</h2>
                 <div class="intAnswer">
                     <p><strong>CSS</strong> - каскадная таблица стилей. Предназначены для добавления стилей для HTML документа.</p>
                 </div>
@@ -111,6 +134,17 @@
                     <p><strong>Inline-block</strong> - элементы расположены в одну строку, но можно задавать свой размер.</p>
                     <p><strong>Flex</strong> - основная концепция в том, что мы можем задавать гибкие лейоуты, управлять направлением, одним свойством центрировать блоки по вертикали и по горизонтали, изменять порядок элементов в целом делать гибкие и отзывчивые макеты.</p>
                     <p><strong>None</strong> - элемент ничего не показывает.</p>
+                </div>
+                <h2 class="intQuestion">Что такое селектор и какие селекторы существуют?</h2>
+                <div class="intAnswer">
+                    <p><strong>Селектор</strong> - это часть CSS правила которая сообщает браузеру к какому элементу страницы будет приминен стиль.</p>
+                    <p>Простые селекторы: class, id, универсальный селектор (*), селектор атрибута (a[href="test"]).</p>
+                    <p>Составные селекторы: комбинация простых селекторов. Группавые селекторы (h1, h2, span), селектор потомка (div a), селектор псевдоклассов (hover) и тд.</p>
+                </div>
+                <h2 class="intQuestion">Разница между Reset и Normalize</h2>
+                <div class="intAnswer">
+                    <p>Практический все HTML элементы имеею стили по умолчанию (отступы, размер и тд). Каждый браузер приминяет различные стили.</p>
+                    <p>Reset сбрасывает все стили по умолчанию, а Normalize стабилизирует все стили для различных браузеров.</p>
                 </div>
                 <h2 class="intQuestion">Keyframes для чего нужно и как использовать?</h2>
                 <div class="intAnswer">
@@ -232,6 +266,50 @@
         <div class="container">
             <h1 class="contentTitle">Интервью: JavaScript</h1>
             <div class="contentInner">
+                <h2 class="intQuestion">Какие есть типы данных в Js?</h2>
+                <div class="intAnswer">
+                    <ul> 
+                        <li>"str" — строка.</li>
+                        <li>123 — числа.</li>
+                        <li>true/false — булеаны.</li>
+                        <li>BigInt — для больших чисел.</li>
+                        <li>null — представляет собой «ничего», «пусто» или «значение неизвестно.</li>
+                        <li>undefined — Оно означает, что «значение не было присвоено.</li>
+                        <li>object — В объектах хранят коллекции данных или более сложные структуры.</li>
+                        <li>symbol — используется для создания уникальных идентификаторов в объектах.</li>
+                        <li>typeof — Оператор typeof возвращает тип аргумента.</li>
+                    </ul>
+                </div>
+                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
+                <div class="intAnswer"> 
+                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
+                    <p>Он заменяет исключениями несколькие ошибки которые Js пропускает по умолчанию.</p>
+                </div>
+                <h2 class="intQuestion">В чем разница между операторами "==" и "==="?</h2>
+                <div class="intAnswer"> 
+                    <p>"==" нестрогое равенство сравнивает значения, а "===" строгое равенство допольнительно сравнивают типы.</p>
+                </div>
+                <h2 class="intQuestion">Разница между function declaration и function expression?</h2>
+                <div class="intAnswer"> 
+                    <p><strong>Function declaration</strong> - это функция которая создется в потоке документа (function name (a,b){}).</p>
+                    <p><strong>Function expression</strong> - это когда созданная функция присваивается в переменную.</p>
+                    <p>Основное отличие - это Function declaration создается до выполнения кода.</p>
+                </div>
+                <h2 class="intQuestion">Что такое поднятие (Hoisting)?</h2>
+                <div class="intAnswer"> 
+                    <p>Поднятие — это термин, описывающий подъем переменной или функции в глобальную или функциональную области видимости.</p>
+                    <p>JavaScript сначала обЪявляет и затем инициализирует переменные. let, const не всплывают как var.</p>
+                </div>
+                <h2 class="intQuestion">Операторы && и ||</h2>
+                <div class="intAnswer"> 
+                    <p>Оператор && - находит и возвращает первое ложное значение или последнее если все значения истинны.</p>
+                    <p>Оператор || - находит и возвращает первое истинное значение.</p>
+                </div>
+                <h2 class="intQuestion">Типы таймеров</h2>
+                <div class="intAnswer"> 
+                    <p>setTimeout() - позволяет вызывать переданную функцию один раз по истечение времени.</p>
+                    <p>setInterval() - позволяет вызывать фунцию постоянно через определенное время.</p>
+                </div>
                 <h2 class="intQuestion">В чем разница между null и undefined?</h2>
                 <div class="intAnswer"> 
                     <p>undefined неожиданное отсутствие значения</p>
@@ -257,14 +335,6 @@
                     <p>Метод event.preventDefault() отключает поведение элемента по умолчанию</p>
                     <p>Метод event.stopPropagation() отключает распространение события (его всплытие или погружение).</p>
                 </div>
-                <h2 class="intQuestion">В чем разница между операторами "==" и "==="?</h2>
-                <div class="intAnswer"> 
-                    <p>Разница между оператором "==" (нестрогое равенство) и оператором "===" (строгое равенство) состоит в том, что первый сравнивает значения после их преобразования или приведения к одному типу, а второй — без такого преобразования.</p>
-                </div>
-                <h2 class="intQuestion">Что такое поднятие (Hoisting)?</h2>
-                <div class="intAnswer"> 
-                    <p>Поднятие — это термин, описывающий подъем переменной или функции в глобальную или функциональную области видимости.</p>
-                </div>
                 <h2 class="intQuestion">Что такое область видимости (Scope)?</h2>
                 <div class="intAnswer"> 
                     <p>Область видимости — это место, где (или откуда) мы имеем доступ к переменным или функциям. JS имеем три типа областей видимости: глобальная, функциональная и блочная (ES6).</p>
@@ -277,29 +347,9 @@
                 <div class="intAnswer"> 
                     <p>Обычно this ссылается на значение объекта, который в данный момент выполняет или вызывает функцию.</p>
                 </div>
-                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
-                <div class="intAnswer"> 
-                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
-                </div>
                 <h2 class="intQuestion">Что такое IIFE?</h2>
                 <div class="intAnswer"> 
                     <p>IIFE или Immediately Invoked Function Expression — это функция, которая вызывается или выполняется сразу же после создания или объявления.</p>
-                </div>
-                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
-                <div class="intAnswer"> 
-                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
-                </div>
-                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
-                <div class="intAnswer"> 
-                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
-                </div>
-                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
-                <div class="intAnswer"> 
-                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
-                </div>
-                <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
-                <div class="intAnswer"> 
-                    <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
                 </div>
             </div>
         </div>
@@ -308,6 +358,27 @@
                 <p class="footerBot">Разработал: <a class="roses" href="https://github.com/roses-are-dead666" target="_blank"><span>@roses-are-dead666</span></a>
             </div>
         </footer>
+    </div>
+    <div class="tabContent" id="problems">
+        <div class="container">
+            <h1 class="contentTitle">Интервью: Задачи по JavaScript</h1>
+            <div class="contentInner">
+                <h2 class="intQuestion">Палиндром</h2>
+                <div class="intAnswer">
+                    <p>function isPalindrom(str) {</p>
+                    <p>return str.toLowerCase() === str.toLowerCase().split("").reverse().join("") ? true : false }</p>
+                    <p>console.log(isPalindrom("abba"))</p> <br>
+                    <a href="https://playcode.io/973589" target="_blank"><p><strong>Решение</strong></p></a>
+                </div>
+                <h2 class="intQuestion">Самое короткое слово</h2>
+                <div class="intAnswer">
+                    <p>function isPalindrom(str) {</p>
+                    <p>return str.toLowerCase() === str.toLowerCase().split("").reverse().join("") ? true : false }</p>
+                    <p>console.log(isPalindrom("abba"))</p> <br>
+                    <a href="https://playcode.io/973589" target="_blank"><p><strong>Решение</strong></p></a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
