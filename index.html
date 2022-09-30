@@ -15,8 +15,8 @@
                     <a class="tabLink" onclick="openPage('hr')" >HR</a>
                     <a class="tabLink" onclick="openPage('html')">HTML</a>
                     <a class="tabLink" onclick="openPage('css')">CSS</a>
-                    <a class="tabLink" onclick="openPage('js')">JavaScript</a>
-                    <a class="tabLink" onclick="openPage('problems')" id="defaultOpen">Задачи</a>
+                    <a class="tabLink" onclick="openPage('js')" id="defaultOpen">JavaScript</a>
+                    <a class="tabLink" onclick="openPage('problems')">Задачи</a>
                 </nav>
 
                 <button class="navBurger" id="navBurger" type="button">
@@ -82,6 +82,10 @@
                 <div class="intAnswer">
                     <p><strong>Doctype</strong> - существует для указания типа документа. Добавляется первой стракой для любого HTML документа.</p>
                 </div>
+                <h2 class="intQuestion">Что такое HTML?</h2>
+                <div class="intAnswer">
+                    <p>Язык разметки с которым можно создавать веб страницы. Основная задача - это помочь браузеру отобразить определенную информацию.</p>
+                </div>
                 <h2 class="intQuestion">Базовая структура HTML-документа</h2>
                 <div class="intAnswer">
                     <p>Doctype -> HTML - это корневая обертка страницы.</p>
@@ -103,6 +107,16 @@
                 <div class="intAnswer">
                     <p>Атрибут alt добавляется тэга картинки (img). Он нужен для того, чтобы в случае когда картинка не отображается на странице отображалось название картинки.</p>
                 </div>
+                <h2 class="intQuestion">Типы input элементов в HTML</h2>
+                <div class="intAnswer">
+                    <p>Input элемент существует для получения вводимых данных.</p>
+                    <ul>
+                        <li>Текстовое поле (input type = "text")</li>
+                        <li>Поле с паролем (input type = "password")</li>
+                        <li>Поле с почтой (input type = "email")</li>
+                        <li>Кнопка (input type = "button"/"submit") и тд</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <footer class="footer">
@@ -118,6 +132,10 @@
                 <h2 class="intQuestion">Что такое CSS?</h2>
                 <div class="intAnswer">
                     <p><strong>CSS</strong> - каскадная таблица стилей. Предназначены для добавления стилей для HTML документа.</p>
+                </div>
+                <h2 class="intQuestion">Что такое CSS правило?</h2>
+                <div class="intAnswer">
+                    <p>Селектор {Свойство: значение;}.</p>
                 </div>
                 <h2 class="intQuestion">Свойство display - основные значения и как они работают?</h2>
                 <div class="intAnswer">
@@ -145,6 +163,17 @@
                 <div class="intAnswer">
                     <p>Практический все HTML элементы имеею стили по умолчанию (отступы, размер и тд). Каждый браузер приминяет различные стили.</p>
                     <p>Reset сбрасывает все стили по умолчанию, а Normalize стабилизирует все стили для различных браузеров.</p>
+                </div>
+                <h2 class="intQuestion">Разница между class и id</h2>
+                <div class="intAnswer">
+                    <p>class лучше использовать ради стилей, а для добавления логики лучше использовать id.</p>
+                    <p>id - должен быть уникальным, class - можно задавать и использовать много раз.</p>
+                    <p>у id вес больше.</p>
+                </div>
+                <h2 class="intQuestion">Разница между адаптивном и отзывчивым дизайном?</h2>
+                <div class="intAnswer">
+                    <p><strong>В адаптивном</strong> - сайте есть несколько HTML, CSS, Js файлов одной страницы, эти файлы загружаются основываясь на устройство.</p>
+                    <p><strong>В отзывчивом</strong> - сайте есть только один набор файлов, но с помощью медиа (@media) запросов можно перестроить сайт на каждое разрешение экрана.</p>
                 </div>
                 <h2 class="intQuestion">Keyframes для чего нужно и как использовать?</h2>
                 <div class="intAnswer">
@@ -280,6 +309,28 @@
                         <li>typeof — Оператор typeof возвращает тип аргумента.</li>
                     </ul>
                 </div>
+                <h2 class="intQuestion">Методы строк в Js</h2>
+                <div class="intAnswer">
+                    <ul> 
+                        <li>str.length — чтобы узнать длину строки.</li>
+                        <li>str.toUpperCase() — возвращает значение строки, преобразованное в верхний регистр.</li>
+                        <li>str.toLowerCase() — возвращает значение строки, преобразованное в нижний регистр.</li>
+                        <li>str.replace() — заменяет значение в строке.</li>
+                        <li>str.indexOf(), str.lastIndexOf() — ищет указанный текст и возвращает числовой индекс если найден, а если нет -1.</li>
+                        <li>str.slice(), substr(), substring() — для извлечения подстроки из строки.</li>
+                    </ul>
+                </div>
+                <h2 class="intQuestion">Методы массивов в Js</h2>
+                <div class="intAnswer">
+                    <ul> 
+                        <li>arr.length — чтобы узнать длину массива.</li>
+                        <li>arr.push() — добавляет элементы в конец.</li>
+                        <li>arr.unshift() — добавляет элементы в начало.</li>
+                        <li>arr.pop() — извлекает элемент с конца.</li>
+                        <li>arr.shift() — извлекает элемент с начала.</li>
+                        <li>arr.join() — превращает массив в строку.</li>
+                    </ul>
+                </div>
                 <h2 class="intQuestion">Для чего используется директива «use strict»?</h2>
                 <div class="intAnswer"> 
                     <p>«use strict» — это директива, которая заставляет весь наш код или код отдельной функции выполняться в строгом режиме.</p>
@@ -318,26 +369,61 @@
                     <p>null == undefined [true]</p>
                     <p>null === undefined [false]</p>
                 </div>
-                <h2 class="intQuestion"> Что такое DOM?</h2>
-                <div class="intAnswer"> 
-                    <p>DOM или Document Object Model (объектная модель документа) — это прикладной программный интерфейс (API) для работы с HTML и XML документами</p>
-                </div>
-                <h2 class="intQuestion">Что такое всплытие события?</h2>
-                <div class="intAnswer"> 
-                    <p>Событие «всплывает», переходит от элемента, вызвавшего событие (event.target), к его родителю, затем поднимается еще выше, к родителю родителя элемента, пока не достигает объекта Window.</p>
-                </div>
-                <h2 class="intQuestion">Что такое погружение события?</h2>
-                <div class="intAnswer"> 
-                    <p>В фазе погружения событие опускается от объекта Window до цели события через всех его предков.</p>
-                </div>
-                <h2 class="intQuestion">В чем разница между методами event.preventDefault() и event.stopPropagation()?</h2>
-                <div class="intAnswer"> 
-                    <p>Метод event.preventDefault() отключает поведение элемента по умолчанию</p>
-                    <p>Метод event.stopPropagation() отключает распространение события (его всплытие или погружение).</p>
-                </div>
                 <h2 class="intQuestion">Что такое область видимости (Scope)?</h2>
                 <div class="intAnswer"> 
                     <p>Область видимости — это место, где (или откуда) мы имеем доступ к переменным или функциям. JS имеем три типа областей видимости: глобальная, функциональная и блочная (ES6).</p>
+                </div>
+                <h2 class="intQuestion">Разница между var, let, const?</h2>
+                <div class="intAnswer"> 
+                    <p>var - переменные могут быть как обновлены, так и переопределены внутри области видимости.</p>
+                    <p>let - переменные можно обновлять, но не переопределять.</p>
+                    <p>const - переменные нельзя ни обновлять, ни переопределять.</p>
+                </div>
+                <h2 class="intQuestion">Что такое функции высшего порядка?</h2>
+                <div class="intAnswer"> 
+                    <p>Это функции которые возвращают другие функции или же принимает другую фунцию (map, reduce etc).</p>
+                </div>
+                <h2 class="intQuestion">Что такое DOM?</h2>
+                <div class="intAnswer"> 
+                    <p>DOM или Document Object Model — это объектная модель документа которую браузер создает в памяти компьютера на основании HTML документа.</p>
+                </div>
+                <h2 class="intQuestion">Методы поиска элементов в DOM?</h2>
+                <div class="intAnswer"> 
+                    <ul>
+                        <li>document.getElementById("id")</li>
+                        <li>document.getElementByName("name")</li>
+                        <li>document.getElementByTagName("div")</li>
+                        <li>document.getElementByClassName("class")</li>
+                        <li>document.querySelector("nav + p")</li>
+                        <li>document.querySelectorAll("nav > ul > li")</li>
+                    </ul>
+                </div>
+                <h2 class="intQuestion">Что такое распространение события?</h2>
+                <div class="intAnswer"> 
+                    <p>Это механизм который срабатывает когда происходит какое-то событие в документе. От window до элемента.</p>
+                    <p>Основные фазы распространения события:</p>
+                    <ul>
+                        <li>Фаза захвата - от корня документа и проходит по DOM дереву до элемента.</li>
+                        <li>Таргет - событие достигает целевого элемента.</li>
+                        <li>Всплытие - событие возвращается обратно до window.</li>
+                    </ul>
+                </div>
+                <h2 class="intQuestion">Что такое всплытие событий?</h2>
+                <div class="intAnswer"> 
+                    <p>Событие «всплывает», переходит от элемента, вызвавшего событие (event.target), к его родителю, затем поднимается еще выше, к родителю родителя элемента, пока не достигает объекта Window.</p>
+                </div>
+                <h2 class="intQuestion">Что такое погружение событий?</h2>
+                <div class="intAnswer"> 
+                    <p>В фазе погружения событие опускается от объекта Window до цели события через всех его предков.</p>
+                </div>
+                <h2 class="intQuestion">Что такое делегирование событий?</h2>
+                <div class="intAnswer"> 
+                    <p>Это прием разработки когда можно добавить один обработчик на общего предка.</p>
+                </div>
+                <h2 class="intQuestion">В чем разница между методами event.preventDefault() и event.stopPropagation()?</h2>
+                <div class="intAnswer"> 
+                    <p>Метод event.preventDefault() отключает поведение элемента по умолчанию.</p>
+                    <p>Метод event.stopPropagation() отключает распространение события (его всплытие или погружение).</p>
                 </div>
                 <h2 class="intQuestion">Что такое замыкание (Closures)?</h2>
                 <div class="intAnswer"> 
@@ -368,17 +454,48 @@
                     <p>function isPalindrom(str) {</p>
                     <p>return str.toLowerCase() === str.toLowerCase().split("").reverse().join("") ? true : false }</p>
                     <p>console.log(isPalindrom("abba"))</p> <br>
-                    <a href="https://playcode.io/973589" target="_blank"><p><strong>Решение</strong></p></a>
+                    <a href="https://replit.com/@itguylong/Palindrome-Checker#index.js" target="_blank"><p><strong>Решение</strong></p></a>
                 </div>
                 <h2 class="intQuestion">Самое короткое слово</h2>
                 <div class="intAnswer">
-                    <p>function isPalindrom(str) {</p>
-                    <p>return str.toLowerCase() === str.toLowerCase().split("").reverse().join("") ? true : false }</p>
-                    <p>console.log(isPalindrom("abba"))</p> <br>
-                    <a href="https://playcode.io/973589" target="_blank"><p><strong>Решение</strong></p></a>
+                    <p>function findShortest(str) {</p>
+                    <p>let words = str.toLowerCase().split(" ");</p>
+                    <p>words.sort((a, b) => a.length - b.length)</p>
+                    <p>return words[0]}</p>
+                    <p>console.log(findShortest("turns out random test cases are easier than writing out basic ones"))</p> <br>
+                    <a href="https://replit.com/@itguylong/Find-Shortest-String#index.js" target="_blank"><p><strong>Решение</strong></p></a>
+                </div>
+                <h2 class="intQuestion">Самое длинное слово</h2>
+                <div class="intAnswer">
+                    <p>let words = ["Iran", "Kazakhstan", "Russia", "USA"];</p>
+                    <p>let longest = words.reduce(function(a, b) {</p>
+                    <p>return a.length > b.length ? a : b })</p>
+                    <p>console.log(longest)</p> <br>
+                    <a href="https://replit.com/@itguylong/Find-Longest-Word#index.js" target="_blank"><p><strong>Решение</strong></p></a>
+                </div>
+                <h2 class="intQuestion">Инициалы</h2>
+                <div class="intAnswer">
+                    <p>function getInitials(str) {</p>
+                    <p>let toUpper = str.toUpperCase();</p>
+                    <p>return toUpper.split(" ").map(first => first[0] + ".").join("")}</p>
+                    <p>console.log(getInitials("steph curry"))</p> <br>
+                    <a href="https://replit.com/@itguylong/Get-Initials-From-Name#index.js" target="_blank"><p><strong>Решение</strong></p></a>
+                </div>
+                <h2 class="intQuestion">Суммирование всех цифр числа</h2>
+                <div class="intAnswer">
+                    <p>function sumDigits(num) {</p>
+                    <p>return Math.abs(num).toString().split("").reduce(function(a, b) {</p>
+                    <p>return parseInt(a) + parseInt(b)})}</p>
+                    <p>console.log(sumDigits(18))</p> <br>
+                    <a href="https://replit.com/@itguylong/Sum-of-Digits#index.js" target="_blank"><p><strong>Решение</strong></p></a>
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="footerInner"> 
+                <p class="footerBot">Разработал: <a class="roses" href="https://github.com/roses-are-dead666" target="_blank"><span>@roses-are-dead666</span></a>
+            </div>
+        </footer>
     </div>
 
 
