@@ -175,6 +175,14 @@
                     <p><strong>В адаптивном</strong> - сайте есть несколько HTML, CSS, Js файлов одной страницы, эти файлы загружаются основываясь на устройство.</p>
                     <p><strong>В отзывчивом</strong> - сайте есть только один набор файлов, но с помощью медиа (@media) запросов можно перестроить сайт на каждое разрешение экрана.</p>
                 </div>
+                <h2 class="intQuestion">Что такое схлопывание границ?</h2>
+                <div class="intAnswer">
+                    <p>Взаимодействие отступов по вертикали. Когда у двух элементов отступы разные и итоговое значение будет равно наибольшему.</p>
+                </div>
+                <h2 class="intQuestion">Что такое кроссбраузерность?</h2>
+                <div class="intAnswer">
+                    <p>Это когда сайт работает и выглядит одинаково в разных браузерах.</p>
+                </div>
                 <h2 class="intQuestion">Keyframes для чего нужно и как использовать?</h2>
                 <div class="intAnswer">
                     <p><strong>Keyframes</strong> - определяет ключевые кадры для анимации. Указывается начальная точка (from) и конечная (to). Ключевое свойство animation.</p>
@@ -208,6 +216,15 @@
                         <li>Для каждого элемента рассчитывается положение на странице</li>
                         <li>Отрисовка в браузере</li>
                     </ol>
+                </div>
+                <h2 class="intQuestion">Что такое вендорные префиксы?</h2>
+                <div class="intAnswer">
+                    <p>Приставка к CSS свойству которая обеспечивает поддержку для браузера.</p> 
+                </div>
+                <h2 class="intQuestion">Разница между Progressive Enhancement и Graceful Degradation</h2>
+                <div class="intAnswer">
+                    <p>Progressive Enhancement - это создание интерфейса от простого до сложного.</p>
+                    <p>Graceful Degradation - это создание интерфейса от сложного до простого.</p>  
                 </div>
                 <h2 class="intQuestion">Что такое inline стили?</h2>
                 <div class="intAnswer">
@@ -258,9 +275,9 @@
                     <p><strong>cover</strong> - сохраняет свои пропорции, но изменяется размер чтобы уместиться в блок.</p> 
                     <p><strong>contain</strong> - ужимает картинку пока не вместиться в блок.</p>
                 </div>
-                <h2 class="intQuestion">Какие псевдоэлементы знаете?</h2>
+                <h2 class="intQuestion">Что такое псевдоэлементы?</h2>
                 <div class="intAnswer">
-                    <p><strong>Псевдоселекторы</strong> - позволяют стилизовать определенный элемент (before, after, first-letter etc).</p> 
+                    <p><strong>Псевдоэлемнты</strong> - добавляются на селектор и позволяют стилизовать определенный элемент (before, after, first-letter etc).</p> 
                 </div>
                 <h2 class="intQuestion">!important для чего нужен?</h2>
                 <div class="intAnswer">
@@ -281,7 +298,7 @@
                 </div>
                 <h2 class="intQuestion">Для чего используются препроцессоры?</h2>
                 <div class="intAnswer">
-                    <p>Препроцессоры - расширяет стандартные возможности CSS. Например: миксины. Миксины - это определенные свойства которые позже можно будет переипользовать.</p> 
+                    <p>Препроцессоры - расширяет стандартные возможности CSS. Например: миксины. Миксины - это определенные свойства которые позже можно будет переиспользовать.</p> 
                 </div>
             </div>
         </div>
@@ -349,7 +366,7 @@
                 <h2 class="intQuestion">Что такое поднятие (Hoisting)?</h2>
                 <div class="intAnswer"> 
                     <p>Поднятие — это термин, описывающий подъем переменной или функции в глобальную или функциональную области видимости.</p>
-                    <p>JavaScript сначала обЪявляет и затем инициализирует переменные. let, const не всплывают как var.</p>
+                    <p>JavaScript сначала объявляет и затем инициализирует переменные. let, const не всплывают как var.</p>
                 </div>
                 <h2 class="intQuestion">Операторы && и ||</h2>
                 <div class="intAnswer"> 
@@ -383,6 +400,45 @@
                 <div class="intAnswer"> 
                     <p>Это функции которые возвращают другие функции или же принимает другую фунцию (map, reduce etc).</p>
                 </div>
+                <h2 class="intQuestion">Что такое такое чистая функция?</h2>
+                <div class="intAnswer"> 
+                    <p>Концепция функционального программирования, в ней не должно быть побочных эффектов (http, dom запросы) и каждый раз возвращает одинаковый результат.</p>
+                </div>
+                <h2 class="intQuestion">Разница между .forEach и .map()?</h2>
+                <div class="intAnswer"> 
+                    <p>Оба метода можно применять к массивам чтобы перебирать элементы и к каждому применять функцию.</p>
+                    <p>forEach - ничего не возвращает, а .map() возвращает новый массив.</p>
+                </div>
+                <h2 class="intQuestion">Какое значение имеет this?</h2>
+                <div class="intAnswer"> 
+                    <p>Обычно this ссылается на значение объекта, который в данный момент выполняет или вызывает функцию.</p>
+                    <p>Может быть глобальным объеком, объявленным или объектом событий.</p>
+                    <p>Чтобы избежать потерю функции контекста вызыва можно использовать .call(), .apply(), .bind().</p>
+                </div>
+                <h2 class="intQuestion">Разница между .call(), .apply(), .bind()?</h2>
+                <div class="intAnswer"> 
+                    <p>Каждый в качестве первого аргумента принимает контекст вызыва.</p>
+                    <p>Разница между .call() и .apply() в том как передаются аргументы внутри функции, .call() - перечисление через запяту, .apply() - через массив.</p>
+                    <p>.call() и .apply() вызываются на месте в момент когда их принимают, а .bind() создает функцию обертку которую можно присвоить в переменную.</p>
+                </div>
+                <h2 class="intQuestion">Что такое замыкание (Closures)?</h2>
+                <div class="intAnswer"> 
+                    <p>При создании функции и использовании внутри переменных эти переменные доступны локально только внутри функции.</p>
+                    <p>На хранение таких переменных выделяется определенная память и когда функция заканчивает выполнение, память очищается.</p>
+                </div>
+                <h2 class="intQuestion">Что такое IIFE?</h2>
+                <div class="intAnswer"> 
+                    <p>IIFE или Immediately Invoked Function Expression — это функция, которая вызывается или выполняется сразу же после создания или объявления.</p>
+                </div>
+                <h2 class="intQuestion">Что такое псевдомассив arguments?</h2>
+                <div class="intAnswer"> 
+                    <p>Это коллекция аргументов которые передаются в функцию. Это объект подобный массиву у которого есть только свойство length.</p>
+                </div>
+                <h2 class="intQuestion">Разница между host и нативными объектами?</h2>
+                <div class="intAnswer"> 
+                    <p>host объекты предоставляются браузером (window, document etc).</p>
+                    <p>Нативные объекты это объекты JavaScript (string, Math etc).</p>
+                </div>
                 <h2 class="intQuestion">Что такое DOM?</h2>
                 <div class="intAnswer"> 
                     <p>DOM или Document Object Model — это объектная модель документа которую браузер создает в памяти компьютера на основании HTML документа.</p>
@@ -408,6 +464,25 @@
                         <li>Всплытие - событие возвращается обратно до window.</li>
                     </ul>
                 </div>
+                <h2 class="intQuestion">Разница между event.target и event.CurrentTarget?</h2>
+                <div class="intAnswer"> 
+                    <p><strong>event.target</strong> - это элемент в котором происходит событие.</p>
+                    <p><strong>event.CurrentTarget</strong> - это элемент которому прикреплен прослушиватель событии.</p>
+                </div>
+                <h2 class="intQuestion">В чем разница между методами event.preventDefault() и event.stopPropagation()?</h2>
+                <div class="intAnswer"> 
+                    <p>Метод event.preventDefault() отключает поведение элемента по умолчанию.</p>
+                    <p>Метод event.stopPropagation() отключает распространение события (его всплытие или погружение).</p>
+                </div>
+                <h2 class="intQuestion">В чем разница между методами event.stopImmediatePropogation() и event.stopPropagation()?</h2>
+                <div class="intAnswer"> 
+                    <p><strong>event.stopPropagation()</strong> - отменяет дальнейшее всплытие.</p>
+                    <p><strong>event.stopImmediatePropogation()</strong> - отменяет дальнейшее всплытие и на текущем элементе.</p>
+                </div>
+                <h2 class="intQuestion">В чем разница между синхронными и асинхронными функциями?</h2>
+                <div class="intAnswer"> 
+                    <p><strong>Синхронными</strong> - называют блокирующие функции, а асинхронные нет.</p>
+                </div>
                 <h2 class="intQuestion">Что такое всплытие событий?</h2>
                 <div class="intAnswer"> 
                     <p>Событие «всплывает», переходит от элемента, вызвавшего событие (event.target), к его родителю, затем поднимается еще выше, к родителю родителя элемента, пока не достигает объекта Window.</p>
@@ -419,23 +494,6 @@
                 <h2 class="intQuestion">Что такое делегирование событий?</h2>
                 <div class="intAnswer"> 
                     <p>Это прием разработки когда можно добавить один обработчик на общего предка.</p>
-                </div>
-                <h2 class="intQuestion">В чем разница между методами event.preventDefault() и event.stopPropagation()?</h2>
-                <div class="intAnswer"> 
-                    <p>Метод event.preventDefault() отключает поведение элемента по умолчанию.</p>
-                    <p>Метод event.stopPropagation() отключает распространение события (его всплытие или погружение).</p>
-                </div>
-                <h2 class="intQuestion">Что такое замыкание (Closures)?</h2>
-                <div class="intAnswer"> 
-                    <p>Замыкание — это способность функции во время создания запоминать ссылки на переменные и параметры, находящиеся в текущей области видимости, в области видимости родительской функции, в области видимости родителя родительской функции и так до глобальной области видимости с помощью цепочки областей видимости.</p>
-                </div>
-                <h2 class="intQuestion">Какое значение имеет this?</h2>
-                <div class="intAnswer"> 
-                    <p>Обычно this ссылается на значение объекта, который в данный момент выполняет или вызывает функцию.</p>
-                </div>
-                <h2 class="intQuestion">Что такое IIFE?</h2>
-                <div class="intAnswer"> 
-                    <p>IIFE или Immediately Invoked Function Expression — это функция, которая вызывается или выполняется сразу же после создания или объявления.</p>
                 </div>
             </div>
         </div>
@@ -488,6 +546,22 @@
                     <p>return parseInt(a) + parseInt(b)})}</p>
                     <p>console.log(sumDigits(18))</p> <br>
                     <a href="https://replit.com/@itguylong/Sum-of-Digits#index.js" target="_blank"><p><strong>Решение</strong></p></a>
+                </div>
+                <h2 class="intQuestion">Минимальное и максимальное значени в массива</h2>
+                <div class="intAnswer">
+                    <p>let quantity = [1, 2, 3, 4, 5]</p>
+                    <p>const getMinMax = (arr) => {</p>
+                    <p>return [Math.min(...arr), Math.max(...arr)] }</p>
+                    <p>console.log(getMinMax(quantity))</p> <br>
+                    <a href="https://replit.com/@itguylong/Min-and-max#index.js" target="_blank"><p><strong>Решение</strong></p></a>
+                </div>
+                <h2 class="intQuestion">Создать набор дубликаторов символов строки</h2>
+                <div class="intAnswer">
+                    <p>let duplicate = "abcd";</p>
+                    <p>const findDuplicate = (str) => {</p>
+                    <p>return str.split("").map((s, i) => (s.toUpperCase() + s.toLowerCase().repeat(i))).join("-") }</p>
+                    <p>console.log(findDuplicate(duplicate))</p> <br>
+                    <a href="https://replit.com/@itguylong/Duplicate-String-Symbols#index.js" target="_blank"><p><strong>Решение</strong></p></a>
                 </div>
             </div>
         </div>
