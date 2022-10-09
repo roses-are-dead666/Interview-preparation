@@ -12,11 +12,11 @@
         <div class="container">
             <div class="headerInner">
                 <nav>
-                    <a class="tabLink" onclick="openPage('hr')" id="defaultOpen">HR</a>
-                    <a class="tabLink" onclick="openPage('html')" >HTML</a>
-                    <a class="tabLink" onclick="openPage('css')" >CSS</a>
-                    <a class="tabLink" onclick="openPage('js')" >JavaScript</a>
-                    <a class="tabLink" onclick="openPage('problems') ">Задачи</a>
+                    <a class="tabLink" onclick="openPage('hr')" >HR</a>
+                    <a class="tabLink" onclick="openPage('html')">HTML</a>
+                    <a class="tabLink" onclick="openPage('css')">CSS</a>
+                    <a class="tabLink" onclick="openPage('js')" id="defaultOpen">JavaScript</a>
+                    <a class="tabLink" onclick="openPage('problems')">Задачи</a>
                 </nav>
 
                 <button class="navBurger" id="navBurger" type="button">
@@ -357,6 +357,15 @@
                 <div class="intAnswer"> 
                     <p>"==" нестрогое равенство сравнивает значения, а "===" строгое равенство допольнительно сравнивают типы.</p>
                 </div>
+                <h2 class="intQuestion">Какими способами можно объявить переменную?</h2>
+                <div class="intAnswer"> 
+                    <ul>
+                        <li>Название переменной и значение (a = 5).</li>
+                        <li>С помощью var (var a = 5). Имеет глобальную или функциональную область видимости, но не имеет блочную.</li>
+                        <li>С помощью let (let a = 5). Имеет блочную область видимости.</li>
+                        <li>С помощью const (const obj = {}). Имеет блочную область видимости.</li>
+                    </ul>
+                </div>
                 <h2 class="intQuestion">Разница между function declaration и function expression?</h2>
                 <div class="intAnswer"> 
                     <p><strong>Function declaration</strong> - это функция которая создется в потоке документа (function name (a,b){}).</p>
@@ -380,11 +389,8 @@
                 </div>
                 <h2 class="intQuestion">В чем разница между null и undefined?</h2>
                 <div class="intAnswer"> 
-                    <p>undefined неожиданное отсутствие значения</p>
-                    <p>null — умышленное отсутствие значения</p>
-                    <p>Чтобы понять разницу можно использовать строгое сравнени "==="</p>
-                    <p>null == undefined [true]</p>
-                    <p>null === undefined [false]</p>
+                    <p>undefined неожиданное отсутствие значения. Переменная без значения выдает undefined.</p>
+                    <p>null — умышленное отсутствие значения. Присваем самостоятельно.</p>
                 </div>
                 <h2 class="intQuestion">Что такое область видимости (Scope)?</h2>
                 <div class="intAnswer"> 
@@ -403,6 +409,13 @@
                 <h2 class="intQuestion">Что такое такое чистая функция?</h2>
                 <div class="intAnswer"> 
                     <p>Концепция функционального программирования, в ней не должно быть побочных эффектов (http, dom запросы) и каждый раз возвращает одинаковый результат.</p>
+                </div>
+                <h2 class="intQuestion">forEach, map, filter, reduce для чего нужны?</h2>
+                <div class="intAnswer"> 
+                    <p>forEach - берет колбэк функцию и запускает на каждый элемент массива. Ничего не возвращает, используют для перебора элементов.</p>
+                    <p>filter - используется для отфильтровки массива. Разница между forEach и filter в том, что forEach пускает цикл по массиву и выполняет колбэк, filter выполняет колбэк и проверяет возвращаемое значение.</p>
+                    <p>map - как и forEach, filter берет колбэк и пускает его по всем элементам массива, но то что делает его уникальным - создает новый массив, основываясь на существующим.</p>
+                    <p>reduce - .</p>
                 </div>
                 <h2 class="intQuestion">Разница между .forEach и .map()?</h2>
                 <div class="intAnswer"> 
